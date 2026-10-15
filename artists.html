@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+  <style>
+    body {
+      background-color: #f9f7ff; /* light purple background */
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #4b2e83; /* deep purple */
+      padding: 20px;
+      text-align: center;
+      color: #ffd700; /* golden */
+    }
+
+    header nav a {
+      color: #ffd700;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      color: white;
+    }
+
+    .accordion-button {
+      background-color: #4b2e83;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: skyblue;
+      color: #ffd700;
+    }
+
+    .artist-card {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px;
+  width: 220px;   /* smaller fixed width */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-card img {
+  background-color: #fff;   /* white background */
+  border-radius: 8px;
+  width: 180px;   /* smaller image width */
+  height: 220px;  /* controlled height */
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  padding: 5px;   /* white box padding */
+}
+
+
+    .artist-card:hover {
+      transform: scale(1.05);
+    }
+
+    .filter-input {
+      margin: 20px auto;
+      display: block;
+      width: 50%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background-color: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Popup styles */
+    #popupBox {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 35%;
+      width: 30%;
+      background: white;
+      border: 2px solid #4b2e83;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      z-index: 100;
+      text-align: center;
+    }
+    #popupBox button {
+      background: skyblue;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bollywood Artists</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="artists.html">Artists</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Filter -->
+    <input type="text" class="filter-input" id="filterInput" placeholder="🔍 Search artist or heroine...">
+
+    <!-- Accordion -->
+    <div class="accordion" id="artistAccordion">
+
+      <!-- Hero Section -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHeroes">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#heroes">
+            Male Artists
+          </button>
+        </h2>
+        <div id="heroes" class="accordion-collapse collapse show" data-bs-parent="#artistAccordion">
+          <div class="accordion-body d-flex flex-wrap">
+
+            <div class="artist-card">
+              <img src="assets\images\vijay.jpeg" alt="Arijit Singh">
+              <h4>Thalapathy Vijay</h4>
+              <ul>
+                <li>Gili</li>
+                <li>Thirupachi</li>
+                <li>Sivakasi</li>
+              </ul>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets\images\siva.jpeg" alt="Sonu Nigam">
+              <h4>Siva karthikeyan</h4>
+              <ul>
+                <li>Rajini murugan</li>
+                <li>Vvs</li>
+                <li>Semaraja</li>
+              </ul>
+            </div>
+
+
+            <div class="artist-card">
+              <img src="assets\images\ravi.jpeg" alt="Sonu Nigam">
+              <h4>Ravi</h4>
+              <ul>
+                <li>Niraimatha Neliave</li>
+                <li>manapiya</li>
+                <li>kanumkannum kolaiyadithal</li>
+              </ul>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets\images\rioraj.jpeg" alt="Sonu Nigam">
+              <h4>RioRaj</h4>
+              <ul>
+                <li>Joe</li>
+                <li>plan panni pannanum</li>
+                <li>SweetHeart</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Heroine Section -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHeroines">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#heroines">
+            Female Artists
+          </button>
+        </h2>
+        <div id="heroines" class="accordion-collapse collapse" data-bs-parent="#artistAccordion">
+          <div class="accordion-body d-flex flex-wrap">
+
+            <div class="artist-card">
+              <img src="assets\images\sridivya.jpeg" alt="Shreya Ghoshal">
+              <h4>Sree Divya</h4>
+              <ul>
+                <li>kaki satai</li>
+                <li>VVs</li>
+                <li>velaikarathurai</li>
+              </ul>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets\images\thrisha.jpeg" alt="Alka Yagnik">
+              <h4>Thrisha</h4>
+              <ul>
+                <li>Gili</li>
+                <li>Thirupachi</li>
+                <li>Aranamanai</li>
+              </ul>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets\images\suresh.jpeg" alt="Alka Yagnik">
+              <h4>Keerthi Suresh</h4>
+              <ul>
+                <li>RajiniMurugan</li>
+                <li>Bairava</li>
+                <li>Sawmi2</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup Box -->
+  <div id="popupBox">
+    <h3>Welcome to Shripriti Musics</h3>
+    <p>Enjoy Bollywood songs from your favorite artists.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+  <div>
+    <section class="gallery">
+  <h2>🎬 Movie Music Gallery</h2>
+  <div class="card-container">
+    
+    <!-- Card 1 -->
+    <div class="music-card">
+      <img src="assets\images\photo1.jpeg" alt="Gilli Poster">
+      <div class="card-content">
+        <h3>Gilli (2004)</h3>
+        <p><strong>Actor:</strong> Thalapathy Vijay</p>
+        <p><strong>Top Song:</strong> Appadi Podu</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="music-card">
+      <img src="assets\images\rajinimurugan.jpg" alt="Rajini Murugan Poster">
+      <div class="card-content">
+        <h3>Rajini Murugan (2016)</h3>
+        <p><strong>Actor:</strong> Siva Karthikeyan</p>
+        <p><strong>Top Song:</strong> Ennama Ippadi Panreengalaema</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="music-card">
+      <img src="images/kaaki-sattai.jpg" alt="Kaaki Sattai Poster">
+      <div class="card-content">
+        <h3>Kaaki Sattai (2015)</h3>
+        <p><strong>Actress:</strong> Sree Divya</p>
+        <p><strong>Top Song:</strong> Kaaki Sattai Theme</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Shripriti Musics</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Filter function
+    const filterInput = document.getElementById("filterInput");
+    filterInput.addEventListener("keyup", function() {
+      let filter = filterInput.value.toLowerCase();
+      document.querySelectorAll(".artist-card").forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+
+    // Popup box show on load
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById("popupBox").style.display = "block";
+      }, 1500);
+    }
+
+    function closePopup() {
+      document.getElementById("popupBox").style.display = "none";
+    }
+  </script>
+</body>
+</html>

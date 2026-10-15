@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Shripriti Musics</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111; /* dark background */
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #FFD700; /* gold */
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      background-color: #1a1a1a; /* dark gray */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background: #333;
+      color: #fff;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #FFD700;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e6c200;
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #FFD700;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="artists.html">Artists</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Form -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p><strong>📍 Address:</strong> Shripriti Musics Studio, Mumbai, India</p>
+        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+        <p><strong>✉ Email:</strong> support@shripritimusics.com</p>
+        <p><strong>⏰ Working Hours:</strong> Mon - Sat, 10 AM - 6 PM</p>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <section>
+      <h2>Find Us on the Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609899967!2d72.7411017978056!3d19.082197839991895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63b2a2f8b15%3A0xa0f0b1d9c8e62b3!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Social Media -->
+    <section>
+      <h2>Connect With Us</h2>
+      <div class="social-links">
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">YouTube</a> | 
+        <a href="#">Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Shripriti Musics | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

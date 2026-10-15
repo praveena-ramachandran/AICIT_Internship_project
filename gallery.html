@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Shripriti Musics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .music-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .music-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .music-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* ===== Custom Buttons for Music/Video ===== */
+.play-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #6c5ce7, #5649c0);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background: linear-gradient(135deg, #5649c0, #6c5ce7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Music Collection</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="artists.html">Artists</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <div class="music-card">
+      <img src="assets\images\image 3.jpeg" alt="Song 1">
+      <h3>Feel the Beat</h3>
+      <audio controls>
+        <source src="assets/music/song.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets/images/song2im.jpeg" alt="Song 2">
+      <h3>Feel the Rhythm</h3>
+      <audio controls>
+        <source src="assets/music/song1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets/images/images5.jpeg" alt="Song 3">
+      <h3>Feel the Magic</h3>
+      <audio controls>
+        <source src="assets/music/song2.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\image4.jpeg" alt="Song 4">
+      <h3>Feel the Power</h3>
+      <audio controls>
+        <source src="assets/music/song3.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\images (1).jpeg" alt="Song 5">
+      <h3>Feel the School</h3>
+      <audio controls>
+        <source src="assets/music/song4.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+
+
+    <div class="music-card">
+      <img src="assets\images\photo.jpeg" alt="Song 6">
+      <h3>Feel the Sad</h3>
+      <audio controls>
+        <source src="assets\music\song5.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+
+    <div class="music-card">
+      <img src="assets\images\photo2.jpeg" alt="Song 7">
+      <h3>Feel the SK Hits</h3>
+      <audio controls>
+        <source src="assets\music\song6.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+
+    <div class="music-card">
+      <img src="assets\images\photo1.jpeg" alt="Song 8">
+      <h3>Feel the vijay2k songs</h3>
+      <audio controls>
+        <source src="assets\music\song7.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\images (1).jpeg" alt="Song 9">
+      <h3>Feel the Songs</h3>
+      <audio controls>
+        <source src="assets\music\song8.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\photo5.jpeg" alt="Song 10">
+      <h3>Feel the VijayJothika spl</h3>
+      <audio controls>
+        <source src="assets\music\song9.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+   <div class="music-card">
+      <img src="assets\images\photo4.jpeg" alt="Song 11">
+      <h3>sridevi special</h3>
+      <audio controls>
+        <source src="assets\music\song10.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\alagoril image.jpeg" alt="Song 12">
+      <h3>Vijay hits on love</h3>
+      <audio controls>
+        <source src="assets\music\song11.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\devaithei song.jpeg" alt="Song 13">
+      <h3>Feel the angel</h3>
+      <audio controls>
+        <source src="assets\music\song12.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\kannukulla movie images.jpeg" alt="Song 14">
+      <h3>love hits</h3>
+      <audio controls>
+        <source src="assets\music\song13.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\kar song images.jpeg" alt="Song 15">
+      <h3>Vijaysethupathi hits</h3>
+      <audio controls>
+        <source src="assets\music\song14.mp3" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\vijay sethupathi song.jpeg" alt="Song 16">
+      <h3>Vijaysethupathi loves</h3>
+      <audio controls>
+        <source src="assets\music\song15.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\u images.jpeg" alt="Song 17">
+      <h3>Reoraj</h3>
+      <audio controls>
+        <source src="assets\music\song16.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\v image.jpeg" alt="Song 18">
+      <h3>vijay hits</h3>
+      <audio controls>
+        <source src="assets\music\song17.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="music-card">
+      <img src="assets\images\WhatsApp Image 2025-07-30 at 10.31.29 PM.jpeg" alt="Song 19">
+      <h3>my favourite hits</h3>
+      <audio controls>
+        <source src="assets\music\innum song.mp3" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+      <!-- Video Section -->
+  <section class="gallery" style="margin-top:50px;">
+    <div class="music-card">
+      <video controls width="100%" style="border-radius:10px;">
+        <source src="assets\music\Innum konjam neram iruntha than enna _ Mariyaan _ Charm_beatzz _ #reels #youtube #shorts #instagram.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Vijay Special Song Video</h3>
+    </div>
+
+    <div class="music-card">
+      <video controls width="100%" style="border-radius:10px;">
+        <source src="assets/videos/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Romantic Melody Video</h3>
+    </div>
+
+    <div class="music-card">
+      <video controls width="100%" style="border-radius:10px;">
+        <source src="assets/videos/video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Dance Hits Video</h3>
+    </div>
+  </section>
+
+</main>
+
+  <footer>
+    <p>© 2025 Shripriti Musics | Music for Everyone</p>
+  </footer>
+
+  <script>
+    const audios = document.querySelectorAll("audio");
+    audios.forEach((audio) => {
+      audio.addEventListener("play", () => {
+        audios.forEach((other) => {
+          if (other !== audio) {
+            other.pause();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
